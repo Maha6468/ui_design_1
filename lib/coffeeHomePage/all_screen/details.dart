@@ -9,6 +9,7 @@ class Details extends StatefulWidget {
 
 class _DetailsState extends State<Details> {
   String selectedSize = "Venti";
+  int quantity=1;
 
   final List<Map<String, String>> sizes = [
     {"label": "Tall", "volume": "12 Fl Oz"},
@@ -173,12 +174,16 @@ class _DetailsState extends State<Details> {
                       ),
                       child: IconButton(
                           color: Colors.white,
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              quantity--;
+                            });
+                          },
                           icon: Icon(Icons.remove)),
                     ),
                     SizedBox(width: 5,),
 
-                    Text("1",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    Text(quantity.toString(),style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                     SizedBox(width: 5,),
                     Container(
                       height: 40,width: 40,
@@ -188,7 +193,11 @@ class _DetailsState extends State<Details> {
                       ),
                       child: IconButton(
                           color: Colors.white,
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              quantity++;
+                            });
+                          },
                           icon: Icon(Icons.add)),
                     ),
 
