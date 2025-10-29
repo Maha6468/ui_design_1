@@ -133,7 +133,6 @@ class _DetailsState extends State<Details> {
 
                       const SizedBox(height: 8),
 
-                      // Text outside the box 👇
                       Text(
                         size["label"]!,
                         style: TextStyle(
@@ -192,7 +191,6 @@ class _DetailsState extends State<Details> {
                           onPressed: (){},
                           icon: Icon(Icons.add)),
                     ),
-
 
                   ],
                 ),
