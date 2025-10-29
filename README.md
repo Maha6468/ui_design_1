@@ -6,4 +6,4 @@ A new Flutter project.
 
 | Home Screen | Details Screen | Cart Screen |
 | ------------ | --------------- | ------------ |
-| ![Home](screenshots/home.jpg) | ![Details](screenshots/details.jpg) | 
+| ![Home](Screenshorts/home.jpg) | ![Details](Screenshorts/detail.jpg) | 
