@@ -24,7 +24,6 @@ class _HomeState extends State<Home> {
               leading: Icon(Icons.baby_changing_station),
               title: Text("Qahwa",style: TextStyle(fontWeight: FontWeight.bold),),
               subtitle:Text("Space"),
-              // trailing: Icon(Icons.shopping_bag_outlined),
               trailing: IconButton(onPressed: (){
                 Navigator.push(context,MaterialPageRoute(builder: (context)=>Details()));
               }, icon: Icon(Icons.shopping_bag_outlined,color: Colors.amber,size: 35,)),
@@ -56,22 +55,18 @@ class _HomeState extends State<Home> {
                           children: [
                             Transform.translate(
                               offset: const Offset(-15, 45),
-                              //offset: Offset(-size.width * 0.04, size.height * 0.05),
                               child: _buildCategoryItem("☕", "HOT COFFEE",size),
                             ),
                             Transform.translate(
                               offset: const Offset(-4, 12),
-                              // offset: Offset(-size.width * 0.04, size.height * 0.05),
                               child: _buildCategoryItem("🥤", "DRINKS",size),
                             ),
                             Transform.translate(
                               offset: const Offset(4, 12),
-                              // offset: Offset(-size.width * 0.04, size.height * 0.05),
                               child: _buildCategoryItem("🍵", "HOT TEAS",size),
                             ),
                             Transform.translate(
                               offset: const Offset(15, 45),
-                              //  offset: Offset(-size.width * 0.04, size.height * 0.05),
                               child: _buildCategoryItem("🧁", "BAKERY",size),
                             ),
                           ],
@@ -80,7 +75,6 @@ class _HomeState extends State<Home> {
 
                       Image.asset(
                         "assets/images/img.png",
-                        // height: 200,
                         height: size.height * 0.20,
                         fit: BoxFit.contain,
                       ),
@@ -100,23 +94,17 @@ class _HomeState extends State<Home> {
                           color: Colors.white70,
                         ),
                       ),
-
-
                     ],
                   ),
                 ),
               ),
             ),
-
-
           ],
         ),
       ),
     );
   }
 }
-
-
 
 class TopCurveClipper extends CustomClipper<Path> {
   @override
