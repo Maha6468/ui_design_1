@@ -2,8 +2,8 @@
 
 A new Flutter project.
 
-## Screenshort
+## screenshots
 
 | Home Screen | Detail Screen | 
-| ------------ | --------------- | ------------ |
-| ![Home](Screenshorts/home.jpg) | ![Details](Screenshorts/detail.jpg) | 
+| ------------ | --------------- |
+| ![Home](screenshots/home.jpg) | ![Details](screenshots/detail.jpg) | 
