@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class Details extends StatefulWidget {
   const Details({super.key});
-
   @override
   State<Details> createState() => _DetailsState();
 }
@@ -41,8 +40,10 @@ class _DetailsState extends State<Details> {
               clipBehavior: Clip.none,
               children: [
                 Container(
-                  height: 200,
-                  width: 200,
+                  //height: 200,
+                  height: MediaQuery.of(context).size.width*0.5,
+                  //width: 200,
+                  width: MediaQuery.of(context).size.width*0.5,
                   decoration: BoxDecoration(
                     color: Colors.green,
                     shape: BoxShape.circle,

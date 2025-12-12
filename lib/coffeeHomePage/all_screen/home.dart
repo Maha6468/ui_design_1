@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'details.dart';
 
@@ -14,7 +13,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -131,24 +129,23 @@ class TopCurveClipper extends CustomClipper<Path> {
 
 
 
+
+
 Widget _buildCategoryItem(String icon, String title,Size size) {
   return Column(
     children: [
       CircleAvatar(
-        // radius: 30,
-        radius: size.width * 0.07,
+        radius: size.width * 0.08,
         backgroundColor: Colors.white,
         child: Text(icon, style:  TextStyle(
-          // fontSize: 30,
-            fontSize: size.width * 0.07
-
+            fontSize: size.width * 0.09
         )),
       ),
       const SizedBox(height: 5),
       Text(
         title,
-        style: const TextStyle(
-            fontSize: 9, fontWeight: FontWeight.w600, color: Colors.grey
+        style: TextStyle(
+            fontSize: size.width*0.03, fontWeight: FontWeight.w600, color: Colors.grey
         ),
       ),
     ],
