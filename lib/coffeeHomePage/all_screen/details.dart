@@ -112,8 +112,7 @@ class _DetailsState extends State<Details> {
                         height: 70,
                         width: 70,
                         decoration: BoxDecoration(
-                          color:
-                          isSelected ? Colors.green : Colors.grey.shade200,
+                          color: isSelected ? Colors.green : Colors.grey.shade200,
                           shape: BoxShape.circle,
                           boxShadow: [
                             if (isSelected)
@@ -141,7 +140,6 @@ class _DetailsState extends State<Details> {
                           color: isSelected ? Colors.green : Colors.black87,
                         ),
                       ),
-                      const SizedBox(height: 2),
                       Text(
                         size["volume"]!,
                         style: const TextStyle(
