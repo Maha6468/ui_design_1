@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
 
             Flexible(
               child: ClipPath(
-                //clipper: TopCurveClipper(),
+                clipper: TopCurveClipper(),
                 child: Container(
                   //width: double.infinity,
                  //width: MediaQuery.of(context).size.width*double.infinity,    // ata worng
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
 
                       Image.asset(
                         "assets/images/img.png",
-                        height: size.height * 0.20,
+                        height: size.height * 0.25,
                         fit: BoxFit.contain,
                       ),
                       const Text(
@@ -119,18 +119,12 @@ class TopCurveClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     Path path = Path();
     path.lineTo(0, 90);
-    path.quadraticBezierTo(
-      size.width / 2,
-      0,
-      size.width,
-      90,
-    );
+    path.quadraticBezierTo(size.width / 2, 0, size.width, 90,);
     path.lineTo(size.width, size.height);
     path.lineTo(0, size.height);
     path.close();
     return path;
   }
-
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
