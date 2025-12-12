@@ -22,8 +22,8 @@ class _HomeState extends State<Home> {
           children: [
             ListTile(
               leading: Icon(Icons.baby_changing_station),
-              title: Text("Qahwa",style: TextStyle(fontWeight: FontWeight.bold),),
-              subtitle:Text("Space"),
+              title: Text("Qahwa",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+              subtitle:Text("Space",style: TextStyle(fontSize: 15),),
               trailing: IconButton(onPressed: (){
                 Navigator.push(context,MaterialPageRoute(builder: (context)=>Details()));
               }, icon: Icon(Icons.shopping_bag_outlined,color: Colors.amber,size: 35,)),
@@ -34,16 +34,24 @@ class _HomeState extends State<Home> {
               alignment: Alignment.topLeft,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
-                child: Text("Smooth Out \nYour Everyday",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: size.width * 0.07),),
+                child: Text("Smooth Out \nYour Everyday",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    //fontSize: size.width * 0.07,
+                  fontSize: MediaQuery.of(context).size.width*0.07
+                ),),
               ),
             ),
 
 
             Flexible(
               child: ClipPath(
-                clipper: TopCurveClipper(),
+                //clipper: TopCurveClipper(),
                 child: Container(
-                  width: double.infinity,
+                  //width: double.infinity,
+                 //width: MediaQuery.of(context).size.width*double.infinity,    // ata worng
+                  width: MediaQuery.of(context).size.width,
+
                   color: const Color(0xFF1E4D2B),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

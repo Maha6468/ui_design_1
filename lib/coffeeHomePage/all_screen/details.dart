@@ -93,9 +93,7 @@ class _DetailsState extends State<Details> {
                   alignment: Alignment.topLeft,
                   child: Text("Size Options",style: TextStyle(color: Colors.grey,fontSize: 18),)),
             ),
-
-
-
+            SizedBox(height: 10,),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
