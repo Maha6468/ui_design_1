@@ -6,4 +6,4 @@ A new Flutter project.
 
 | Home Screen | Detail Screen | 
 | ------------ | --------------- |
-| <img src="screenshots/home.jpg" width="200"/> | <img src="screenshots/detail.jpg" width="250"/> |
+| <img src="screenshots/home.jpg" width="250"/> | <img src="screenshots/detail.jpg" width="250"/> |
